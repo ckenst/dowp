@@ -1,10 +1,8 @@
 #!/bin/bash
 # dowp.bash
 # Export WordPress posts--"posts," not everything.
-# Import WordPress posts into Day One.
+# Import WordPress posts into Day One2.
 # by Susan Pitman
-# 11/12/14 Script created.
-# 11/15/14 Fixed title so it would show up bold (\r\n)
 thisDir=`pwd`
 
 makePostFiles () {
@@ -52,7 +50,7 @@ postPopper () {
     shortPost=`echo ${postText2} | cut -c1-100`
     printf "Title: ${postTitle}\n"
     printf "${shortPost}\n"
-    echo ${postText} | /usr/local/bin/dayone -d="${postDateTimeForDayOne}" new
+    echo ${postText} | /usr/local/bin/dayone2 -d="${postDateTimeForDayOne}" new
     shortName=`echo ${fileName} | tr '/' '\n' | tail -1`
     mv ${fileName} ${thisDir}/dowpPosts/done.${shortName}
     printf "`ls ${thisDir}/dowpPosts/p* | wc -l` posts left to import.\n\n"
