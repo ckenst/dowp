@@ -26,11 +26,13 @@ B. Now you need the command line interface (CLI) that Day One uses.
 C. Next, copy the dowp.bash listed above into the directory called dowp that you made earlier.
 
 `$ cd /Users/fred/dowp`
+
 `$ vi dowp.bash`
 
 [Paste in the contents of the dowp.bash script, exit and save with `:wq!`.]
 
 `$ chmod 700 dowp.bash`
+
 `$ ./dowp.bash`
 
 That's it! Enjoy!
